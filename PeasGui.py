@@ -6,7 +6,7 @@ import argparse
 
 def execute_command(command):
     # 执行命令并捕获输出
-    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+    result = subprocess.run(command, shell=True, capture_output=True, text=True, encoding='utf-8')
     peas_text = r''' _ __   ___  __ _ ___
 | '_ \ / _ \/ _' / __|
 | |_) |  __/ (_| \__ \
